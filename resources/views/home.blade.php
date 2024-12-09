@@ -7,10 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
+    <!-- Encabezado -->
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-center text-2xl">Gestión de Productos</h1>
+    </header>
     <!-- Contenedor para los botones -->
     <article class="max-w-4xl mx-auto mt-8">
         <section class="flex space-x-4">
-            <a href="{{route('proveedor')}}" class="block p-4 bg-blue-500 text-white rounded shadow hover:bg-blue-600 w-full text-center">
+            <a href="{{route('proveedor')}}" class="block p-4 bg-green-500 text-white rounded shadow hover:bg-blue-600 w-full text-center">
                 <h2 class="text-xl">Ir a Proveedores</h2>
             </a>
             <a href="{{route('categoria')}}" class="block p-4 bg-blue-500 text-white rounded shadow hover:bg-blue-600 w-full text-center">
@@ -81,6 +85,12 @@
                 </tbody>
             </table>
         </section>
+        <!-- Botón Volver al Dashboard -->
+        <div class="text-center">
+            <a href="{{ route('dashboard') }}" class="inline-block px-6 py-3 bg-gray-500 text-white rounded shadow hover:bg-gray-600">
+                Volver al Dashboard
+            </a>
+        </div>
     </section>
 
 </body>
